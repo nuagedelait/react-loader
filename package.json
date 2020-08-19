@@ -35,9 +35,9 @@
   "name": "@nuagedelait/react-loader",
   "scripts": {
     "lint": "eslint ./src",
-    "build": "babel src --out-dir lib --extensions '.ts,.tsx'",
-    "watch": "babel --watch src --out-file watch-script.js --extensions '.ts,.tsx'",
-    "test": "jest",
+    "build": "./node_modules/.bin/babel src --out-dir lib --extensions '.ts,.tsx'",
+    "watch": "./node_modules/.bin/babel src --watch --out-file watch-script.js --extensions '.js,.ts,.tsx'",
+    "test": "./node_modules/.bin/jest --watchAll --verbose",
     "tsc": "tsc"
   },
   "type": "module",
